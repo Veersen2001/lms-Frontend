@@ -28,14 +28,15 @@ function CourseDescription() {
                                     <span className="text-yellow-500 font-bold">
                                         Total lectures : {" "}
                                     </span>
-                                    {state?.numberOfLectures}
+                                    <span className="text-black text-lg">{state?.numberOfLectures}</span>
                                 </p>
 
                                 <p className="font-semibold">
                                     <span className="text-yellow-500 font-bold">
                                         Instructor : {" "}
                                     </span>
-                                    {state?.createdBy}
+                                    <span className="text-black text-lg">{state?.createdBy}</span>
+                                    
                                 </p>
 
                             </div>
@@ -62,7 +63,7 @@ function CourseDescription() {
                         </h1>
 
                         <p className="text-yellow-500">Course description: </p>
-                        <p>{state?.description}</p>
+                        <p className="text-black">{state?.description}</p>
                     </div>
                 </div>
             </div>

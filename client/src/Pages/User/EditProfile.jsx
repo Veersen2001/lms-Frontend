@@ -72,8 +72,8 @@ function EditProfile() {
                     onSubmit={onFormSubmit}
                     className="flex flex-col justify-center gap-5 rounded-lg p-4 text-white w-80 min-h-[26rem] shadow-[0_0_10px_black]"
                 >
-                    <h1 className="text-center text-2xl font-semibold">Edit profile</h1>
-                    <label className="cursor-pointer" htmlFor="image_uploads">
+                    <h1 className="text-center text-2xl font-semibold text-black">Edit profile</h1>
+                    <label className="cursor-pointer " htmlFor="image_uploads">
                         {data.previewImage ? (
                             <img 
                                 className="w-28 h-28 rounded-full m-auto"
@@ -81,12 +81,12 @@ function EditProfile() {
 
                             />
                         ): (
-                            <BsPersonCircle className="w-28 h-28 rounded-full m-auto" />
+                                <BsPersonCircle className="w-28 h-28 rounded-full m-auto  text-gray-700 " />
                         )}
                     </label>
                     <input 
                         onChange={handleImageUpload}
-                        className="hidden"
+                        className="hidden  "
                         type="file"
                         id="image_uploads"
                         name="image_uploads"
@@ -94,14 +94,14 @@ function EditProfile() {
                 
                     />
                     <div className="flex flex-col gap-1">
-                        <label htmlFor="fullName" className="text-lg font-semibold">Full Name</label>
+                        <label htmlFor="fullName" className="text-lg font-semibold text-black">Full Name</label>
                         <input 
                             required
                             type="text"
                             name="fullName"
                             id="fullName"
                             placeholder="Enter your name"
-                            className="bg-transparent px-2 py-1 border"
+                            className="bg-transparent px-2 py-1 border text-gray-700"
                             value={data.fullName}
                             onChange={handleInputChange}
                         

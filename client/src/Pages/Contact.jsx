@@ -63,16 +63,16 @@ function Contact() {
                     onSubmit={onFormSubmit}
                     className="flex flex-col items-center justify-center gap-2 p-5 rounded-md text-white shadow-[0_0_10px_black] w-[22rem]">
 
-                    <h1 className="text-3xl font-semibold">
+                    <h1 className="text-3xl font-semibold text-black">
                         Contact Form
                     </h1>
 
                     <div className="flex flex-col w-full gap-1">
-                        <label htmlFor="name" className="text-xl font-semibold">
+                        <label htmlFor="name" className="text-xl font-semibold text-black">
                             Name
                         </label>
                         <input 
-                            className="bg-transparent border px-2 py-1 rounded-sm"
+                            className="bg-transparent border px-2 py-1 rounded-sm text-gray-700"
                             id="name"
                             type="text"
                             name="name"
@@ -84,11 +84,11 @@ function Contact() {
                     </div>
 
                     <div className="flex flex-col w-full gap-1">
-                        <label htmlFor="email" className="text-xl font-semibold">
+                        <label htmlFor="email" className="text-xl font-semibold text-black">
                             Email
                         </label>
                         <input 
-                            className="bg-transparent border px-2 py-1 rounded-sm"
+                            className="bg-transparent border px-2 py-1 rounded-sm text-gray-700"
                             id="email"
                             type="email"
                             name="email"
@@ -100,14 +100,14 @@ function Contact() {
                     </div>
 
                     <div className="flex flex-col w-full gap-1">
-                        <label htmlFor="message" className="text-xl font-semibold">
+                        <label htmlFor="message" className="text-xl font-semibold text-black">
                             Message
                         </label>
                         <textarea 
-                            className="bg-transparent border px-2 py-1 rounded-sm resize-none h-40"
+                            className="bg-transparent border px-2 py-1 rounded-sm resize-none h-40 text-gray-700"
                             id="message"
                             name="message"
-                            placeholder="Enter your email"
+                            placeholder="Enter your message"
                             onChange={handleInputChange}
                             value={userInput.message}
                         />

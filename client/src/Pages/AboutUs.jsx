@@ -8,12 +8,12 @@ function AboutUs() {
     return (
         <HomeLayout>
             <div className="pl-20 pt-20 flex flex-col text-white">
-                <div className="flex items-center gap-5 mx-10">
-                    <section className="w-1/2 space-y-10">
+                <div className="flex flex-wrap items-center gap-5 mx-10">
+                    <section className="w-full space-y-10">
                         <h1 className="text-5xl text-yellow-500 font-semibold">
-                            Affordable and quality education
+                            Affordable And Quality Education
                         </h1>
-                        <p className="text-xl text-gray-200">
+                        <p className="text-xl text-gray-800">
                             Our goal is to provide the afoordable and quality education to the world. 
                             We are providing the platform for the aspiring teachers and students to share
                             their skills, creativity and knowledge to each other to empower and contribute
@@ -21,14 +21,14 @@ function AboutUs() {
                         </p>
                     </section>
 
-                    <div className="w-1/2">
+                    <div className="w-full">
                         <img
                             id="test1"
                             style={{
                                 filter: "drop-shadow(0px 10px 10px rgb(0,0,0));"
                             }}
                             alt="about main image"
-                            className="drop-shadow-2xl"
+                            className="drop-shadow-2x"
                             src={aboutMainImage}
                         />
                     </div>

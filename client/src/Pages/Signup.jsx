@@ -100,58 +100,58 @@ function Signup() {
         <HomeLayout>
             <div className='flex overflow-x-auto items-center justify-center h-[100vh]'>
                 <form noValidate onSubmit={createNewAccount} className='flex flex-col justify-center gap-3 rounded-lg p-4 text-white w-96 shadow-[0_0_10px_black]'>
-                    <h1 className="text-center text-2xl font-bold">Registration Page</h1>
+                    <h1 className="text-center text-2xl font-bold text-black">Registration Page</h1>
 
                     <label htmlFor="image_uploads" className="cursor-pointer">
                         {previewImage ? (
                             <img className="w-24 h-24 rounded-full m-auto" src={previewImage} />
                         ) : (
-                            <BsPersonCircle className='w-24 h-24 rounded-full m-auto' />
+                            <BsPersonCircle className='w-24 h-24 rounded-full m-auto text-gray-600' />
                         )}
                     </label>
                     <input 
                         onChange={getImage}
-                        className="hidden"
+                        className="hidden text-black border border-gray-800"
                         type="file"
                         name="image_uploads"
                         id="image_uploads"
                         accept=".jpg, .jpeg, .png, .svg"
                     />
                     <div className='flex flex-col gap-1'>
-                        <label htmlFor="fullName" className='font-semibold'> Name </label>
+                        <label htmlFor="fullName" className='font-semibold text-black'> Name </label>
                         <input 
                             type="text" 
                             required
                             name="fullName"
                             id="fullName"
                             placeholder="Enter your name.."
-                            className="bg-transparent px-2 py-1 border"
+                            className="bg-transparent px-2 py-1 border text-gray-600"
                             onChange={handleUserInput}
                             value={signupData.fullName}
                         />
                     </div>
-                    <div className='flex flex-col gap-1'>
-                        <label htmlFor="email" className='font-semibold'> Email </label>
+                    <div className='flex flex-col gap-1 '>
+                        <label htmlFor="email" className='font-semibold text-black'> Email </label>
                         <input 
                             type="email" 
                             required
                             name="email"
                             id="email"
                             placeholder="Enter your email.."
-                            className="bg-transparent px-2 py-1 border"
+                            className="bg-transparent px-2 py-1 border text-gray-600"
                             onChange={handleUserInput}
                             value={signupData.email}
                         />
                     </div>
                     <div className='flex flex-col gap-1'>
-                        <label htmlFor="password" className='font-semibold'> Password </label>
+                        <label htmlFor="password" className='font-semibold text-black'> Password </label>
                         <input 
                             type="password" 
                             required
                             name="password"
                             id="password"
                             placeholder="Enter your password.."
-                            className="bg-transparent px-2 py-1 border"
+                            className="bg-transparent px-2 py-1 border text-gray-700"
                             onChange={handleUserInput}
                             value={signupData.password}
                         />
@@ -161,7 +161,7 @@ function Signup() {
                         Create account
                     </button>
 
-                    <p className="text-center">
+                    <p className="text-center text-black">
                         Already have an account ? <Link to="/login" className='link text-accent cursor-pointer'> Login</Link>
                     </p>
 

@@ -31,7 +31,7 @@ function Profile() {
                     <h3 className="text-xl font-semibold text-center capitalize">
                         {userData?.fullName}
                     </h3>
-                    <div className="grid grid-cols-2">
+                    <div className="grid grid-cols-2 text-black">
                         <p>Email: </p><p>{userData?.email}</p>
                         <p>Role: </p><p>{userData?.role}</p>
                         <p>Subscription: </p>

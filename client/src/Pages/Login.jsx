@@ -46,29 +46,29 @@ function Signup() {
         <HomeLayout>
             <div className='flex overflow-x-auto items-center justify-center h-[100vh]'>
                 <form noValidate onSubmit={onLogin} className='flex flex-col justify-center gap-3 rounded-lg p-4 text-white w-96 shadow-[0_0_10px_black]'>
-                    <h1 className="text-center text-2xl font-bold">Login Page</h1>
+                    <h1 className="text-center text-2xl font-bold text-black">Login Page</h1>
                     <div className='flex flex-col gap-1'>
-                        <label htmlFor="email" className='font-semibold'> Email </label>
+                        <label htmlFor="email" className='font-semibol text-black'> Email </label>
                         <input 
                             type="email" 
                             required
                             name="email"
                             id="email"
                             placeholder="Enter your email.."
-                            className="bg-transparent px-2 py-1 border"
+                            className="bg-transparent px-2 py-1 border rounded-sm text-gray-700"
                             onChange={handleUserInput}
                             value={loginData.email}
                         />
                     </div>
                     <div className='flex flex-col gap-1'>
-                        <label htmlFor="password" className='font-semibold'> Password </label>
+                        <label htmlFor="password" className='font-semibold text-black'> Password </label>
                         <input 
                             type="password" 
                             required
                             name="password"
                             id="password"
                             placeholder="Enter your password.."
-                            className="bg-transparent px-2 py-1 border"
+                            className="bg-transparent px-2 py-1 border text-gray-700"
                             onChange={handleUserInput}
                             value={loginData.password}
                         />
@@ -78,8 +78,8 @@ function Signup() {
                        Login
                     </button>
 
-                    <p className="text-center">
-                        Donot hanve an account ? <Link to="/signup" className='link text-accent cursor-pointer'> Signup</Link>
+                    <p className="text-center text-gray-600">
+                        Don't have an account ? <Link to="/signup" className='link text-accent cursor-pointer'> Signup</Link>
                     </p>
 
                 </form>
