@@ -151,3 +151,20 @@ html.light ::-webkit-scrollbar-thumb:hover {
 .slideshowDot.active {
   background-color: #6a0dad;
 }
+
+
+.logo{
+   max-height: 150px;
+}
+
+@media screen and (max-width:768px) {
+  .logo{
+     position:relative;
+     left: 40%;
+     height: 120px;
+  }
+  .slideshow{
+    max-width: 500px;
+    
+  }
+}

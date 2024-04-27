@@ -33,6 +33,7 @@
 
 import React from "react";
 import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     const curDate = new Date();
@@ -97,7 +98,10 @@ export default function Footer() {
                                 <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
                                 <ul class="list-unstyled">
                                     <li>
-                                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm hover:text-yellow-400" href="">About Us</a>
+                                        {/* <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm hover:text-yellow-400" href="">About Us</a> */}
+                                        <Link to="/about" className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm hover:text-yellow-400">
+                                            About Us
+                                        </Link>
                                     </li>
                                     <li>
                                         <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm hover:text-yellow-400" href="">Blog</a>
@@ -119,7 +123,9 @@ export default function Footer() {
                                         <a class="hover:text-yellow-400 font-semibold block pb-2 text-sm" href="">Privacy Policy</a>
                                     </li>
                                     <li>
-                                        <a class="hover:text-yellow-400 font-semibold block pb-2 text-sm" href="">Contact Us</a>
+                                        <Link to="/contact" className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm hover:text-yellow-400">
+                                            Contact Us
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>

@@ -4,12 +4,13 @@ import { Link } from "react-router-dom";
 import HomeLayout from "../Layouts/HomeLayout.jsx";
 import HomePageImage from "../Assets/Images/homePageMainImage.png";
 import ImageSlider from "../Helpers/ImageSlider.jsx";
-
+import logo from "../Assets/Images/logo1.jpeg"
 export default function HomePage(){
     return (
         <HomeLayout>
-            <section className="md:py-10 py-7 mb-10 text-white flex md:flex-row flex-col-reverse items-center justify-center md:gap-10 gap-7 md:px-16 px-6 min-h-[85vh] ">
-                <div className="md:w-1/2 w-full space-y-7">
+             <img src={logo} alt="" className="logo" />
+            <section className="md:py-10 py-7 text-white flex md:flex-row flex-col-reverse items-center justify-center md:gap-10 gap-7 md:px-16 px-6 min-h-[85vh]">
+                <div className="md:w-1/2 w-full space-y-7 mb-20">
                     <h1 className="md:text-5xl text-6xl font-semibold text-gray-900">
                         Find out best
                          <span className=" text-purple-600 font-bold font-open-sans">&nbsp;Online Courses</span>
@@ -34,7 +35,7 @@ export default function HomePage(){
                     </div>
                 </div>
 
-                <div className="md:w-1/2 w-1/7 flex items-center justify-center">
+                <div className="lg:w-1/2 w-1/7 flex  justify-center mb-12">
                     <ImageSlider/>
                         {/* <img alt="homepage image" src={HomePageImage} /> */}
                 </div>
