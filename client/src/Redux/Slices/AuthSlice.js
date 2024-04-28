@@ -20,7 +20,7 @@ export const createAccount = createAsyncThunk("/auth/signup", async (data) => {
             },
             error: "Failed to create account"
         });
-        console.log(res);
+        
         return (await res).data;
     } catch(error) {
         toast.error(error?.response?.data?.message);
