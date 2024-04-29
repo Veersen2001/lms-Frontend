@@ -19,7 +19,9 @@ export const getRazorPayId = createAsyncThunk("/razorpay/getId", async () => {
     } catch(error) {
         toast.error("Failed to load data");
     }
+    console.log();
 })
+console.log(getRazorPayId);
 
 
 export const purchaseCourseBundle = createAsyncThunk("/purchaseCourse", async () => {

@@ -15,7 +15,7 @@ function Signup() {
         email: "",
         password: "",
     });
-    console.log("Login Data",loginData);
+    
 
     function handleUserInput(e) {
         const {name, value} = e.target;
