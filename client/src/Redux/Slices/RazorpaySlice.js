@@ -22,7 +22,7 @@ export const getRazorPayId = createAsyncThunk("/razorpay/getId", async () => {
     }
     console.log();
 })
-console.log(getRazorPayId);
+
 
 
 export const purchaseCourseBundle = createAsyncThunk("/purchaseCourse", async () => {
