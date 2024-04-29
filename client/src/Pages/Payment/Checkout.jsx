@@ -22,13 +22,13 @@ function Checkout() {
     async function handleSubscription(e) {
         e.preventDefault();
         if(!razorpayKey || !subscription_id) {
-            toast.error("Something went wrong");
+            toast.error("Something went wrong in Payment");
             return;
         }
         const options = {
             key: razorpayKey,
             subscription_id: subscription_id,
-            name: "Coursify Pvt. Ltd.",
+            name: "CodeNixia",
             description: "Subscription",
             theme: {
                 color: '#F37254'
