@@ -7,7 +7,7 @@ const initialState = {
     role: localStorage.getItem('role') || "",
     data: localStorage.getItem('data') != "undefined" ? JSON.parse(localStorage.getItem('data')) : {}
 };
-console.log(initialState);
+console.log(initialState.data);
 
 export const createAccount = createAsyncThunk("/auth/signup", async (data) => {
     try {
