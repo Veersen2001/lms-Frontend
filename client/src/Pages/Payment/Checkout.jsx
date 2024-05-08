@@ -18,7 +18,7 @@ function Checkout() {
         razorpay_subscription_id: "",
         razorpay_signature: ""
     }
-    console.log("Payment:"+paymentDetails);
+    console.log("Payment:"+razorpayKey);
 
     async function handleSubscription(e) {
         e.preventDefault();
