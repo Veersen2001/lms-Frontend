@@ -18,7 +18,9 @@ function Checkout() {
         razorpay_subscription_id: "",
         razorpay_signature: ""
     }
-    console.log("Payment:"+razorpayKey);
+    console.log("Payment:"+paymentDetails);
+    
+  
 
     async function handleSubscription(e) {
         e.preventDefault();
@@ -49,6 +51,7 @@ function Checkout() {
         }
         const paymentObject = new window.Razorpay(options);
         paymentObject.open();
+        console.log("opton:"+options);
     }
 
     async function load() {

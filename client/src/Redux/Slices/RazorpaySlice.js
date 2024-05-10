@@ -63,7 +63,10 @@ export const getPaymentRecord = createAsyncThunk("/payments/record", async () =>
     } catch(error) {
         toast.error("Operation failed");
     }
+    
 });
+
+console.log(getPaymentRecord);
 
 export const cancelCourseBundle = createAsyncThunk("/payments/cancel", async () => {
     try {
