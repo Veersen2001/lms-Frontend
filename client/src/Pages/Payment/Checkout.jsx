@@ -19,6 +19,7 @@ function Checkout() {
         razorpay_signature: ""
     }
     console.log("Payment:"+subscription_id);
+    console.log('Payment id:'+razorpayKey);
     
   
 
