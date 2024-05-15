@@ -24,6 +24,7 @@ function AdminDashboard() {
     const { allPayments, monthlySalesRecord } = useSelector((state) => state.razorpay);
 
 
+    
     const userData = {
         labels: ["Registered User", "Enrolled User"],
         fontColor: "white",
@@ -31,9 +32,9 @@ function AdminDashboard() {
             {
                 label: "User Details",
                 data: [allUsersCount, subscribedCount],
-                backgroundColor: ["yellow", "green"],
+                backgroundColor: ["blue", "green"],
                 borderWidth: 1,
-                borderColor: ["yellow","green"]
+                borderColor: ["blue","green"]
             },
         ]
     };
