@@ -32,9 +32,9 @@ function AdminDashboard() {
             {
                 label: "User Details",
                 data: [allUsersCount, subscribedCount],
-                backgroundColor: ["blue", "green"],
+                backgroundColor: ["red", "green"],
                 borderWidth: 1,
-                borderColor: ["blue","green"]
+                borderColor: ["red","green"]
             },
         ]
     };
